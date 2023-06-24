@@ -1,0 +1,11 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: slategrey;
+  box-sizing:
+    /*border-box;*/
+    content-box;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}

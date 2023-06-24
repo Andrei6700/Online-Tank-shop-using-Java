@@ -1,0 +1,65 @@
+
+.layout {
+    width: 100%;
+    display: grid;
+    grid:
+    "filters content content" 1fr
+    "footer footer footer" 60px/ 15% 1fr 0px;
+}
+
+.footer {
+    grid-area: footer;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+  }
+  
+
+.filters {
+    grid-area: filters;
+    background-image: url("../images-patterns/military\ camouflage\ patterns-filtre.jpg");
+    padding-left: 20%;
+}
+
+.content {
+    grid-area: content;
+background-color: #161616; 
+    background-size: cover;
+    color: black;
+}
+
+ .hr-title{
+  color: rgb(243, 241, 241);
+  border: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(/src/UI/tancuri-img/sticker.png);
+  background-repeat: round;  
+  display: flex;
+  align-items: center;
+}  
+
+.btn-filtre {
+  outline: none;
+  cursor: pointer;
+  padding: 0.9rem 2rem;
+  margin: 2% 0;
+  font-family: Optima;
+  display: inline-block;
+  font-weight: 50;
+  font-size: 17px;
+  letter-spacing: 0.2em;
+  border-radius: 500px;
+  background-image: url("../images-patterns/military\ camouflage\ patterns-buttons-filtre.jpg");
+  color: ghostwhite;
+ }
+ 
+ 

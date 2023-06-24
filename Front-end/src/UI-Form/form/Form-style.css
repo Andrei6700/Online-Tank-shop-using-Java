@@ -1,0 +1,75 @@
+.name,
+.message,
+.email,
+.tara,
+.adresa,
+.telefon,
+.bmilitara,
+.cantitate {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 5px;
+    margin: 5% 0;
+    padding: 3px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: 18px;
+    box-shadow: inset 2px 2px 5px #cdd1cf, inset -2px -2px 5px #d8d3d3;
+}
+
+.message {
+    height: 50px;
+}
+
+form {
+    width: 200px;
+}
+
+.errors {
+    color: red;
+    background-color: rgb(238, 199, 199);
+    background-size: 10em;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-block-start: 10px;
+    font-size: medium;
+}
+
+form {
+    display: flex;
+    flex-direction: inherit;
+}
+
+.submit {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1a1a1a;
+    border-radius: 0.9375em;
+    color: #000000;
+    cursor: crosshair;
+    display: flex;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14.5px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 2.75em;
+    padding: 0 2em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    touch-action: manipulation;
+    will-change: transform;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.submit:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}

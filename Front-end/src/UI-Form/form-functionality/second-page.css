@@ -1,0 +1,118 @@
+.layout-page {
+  width: 100%;
+  display: grid;
+  grid: "header header" 0% "description form-order" 100% "footer footer" 20% / 70% 30%;
+}
+
+.header-page {
+  grid-area: header;
+  background-image: url("../../UI/images-patterns/military\ camouflage\ patterns-filtre.jpg");
+  width: 100%;
+  min-height: 60px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1000;
+}
+
+.description-page {
+  grid-area: description;
+  /* background-image: url("../../UI/images-patterns/"); */
+  background-color: gray;
+  /* background-repeat: no-repeat; */
+  object-fit: fill;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  padding-top:10%;
+}
+
+.form-order-page {
+  grid-area: form-order;
+  background-color: #b89f6c;
+  display: flex;
+  padding-left: 25%;
+  padding-top:10%;
+}
+
+.footer-page {
+  grid-area: footer;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+
+.image-tank {
+  border-radius: 2%;
+  height: 500px;
+}
+
+.text-tank {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: justify;
+  letter-spacing: 3px;
+  margin: 20px;
+  align-items: flex-start;
+  line-height: normal;
+}
+
+.form-title{
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.Btn-back{
+  left: 1%;
+  top: 9%;
+  z-index:9999;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(#6b8773, #232823);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  border: none;
+  transform: rotate(272deg);
+}
+
+.arrow path {
+  fill: rgb(255, 255, 255);
+}
+
+.Btn-back:hover .arrow {
+  animation: slide-in-bottom .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(11px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
