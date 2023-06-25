@@ -10,13 +10,27 @@ import java.util.List;
 @RequestMapping("/send")
 @CrossOrigin
 public class FormHTTPS {
+
+    @Autowired
+    private EmailSender emailSender;
     @Autowired
     private FormService formService;
 
     @PostMapping("/add")
-    public String add (@RequestBody Form form){
+    public String SendFormDBAndEmail(@RequestBody Form form) {
         formService.saveForm(form);
-        return "Adaugat cu succes";
+        emailSender.sendSimpleEmail(
+                form.getEmail(),
+                "Orders",
+                "Name: " + form.getName() + "\n" +
+                        "Email: " + form.getEmail() + "\n" +
+                        "Country: " + form.getTara() + "\n" +
+                        "Address: " + form.getAdresa() + "\n" +
+                        "Phone: " + form.getTelefon() + "\n" +
+                        "Bmilitara: " + form.getBmilitara() + "\n" +
+                        "Quantity: " + form.getCantitate()
+        );
+        return "Adăugat cu succes";
     }
     @GetMapping("/getAll")
     public List<Form> list(){
