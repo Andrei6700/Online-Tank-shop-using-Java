@@ -4,14 +4,12 @@ import { InputField } from '../components-form/input-fileds';
 import { InputButtons } from '../components-form/input-button';
 import { OnSubmit } from '../components-form/on-submit';
 import { useFormData } from '../components-form/form-data';
-import axios from 'axios';
 
 export const Form = () => {
   const { register, handleSubmit, errors } = useFormData();
 
   const onSubmit = (data) => {
-    OnSubmit(data);
-    sendEmail(data);
+    OnSubmit(data); 
   };
 
   return (
