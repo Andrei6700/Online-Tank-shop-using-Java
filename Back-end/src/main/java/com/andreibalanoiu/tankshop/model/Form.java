@@ -14,6 +14,9 @@ public class Form {
     private String telefon;
     private String bmilitara;
     private String adresa;
+
+    private String produs;
+
     private String cantitate;
 
     public Form() {
@@ -82,4 +85,9 @@ public class Form {
     public void setCantitate(String cantitate) {
         this.cantitate = cantitate;
     }
+
+    public String getProdus(){
+        return  produs;
+    }
+    public  void setProdus(String produs) { this.produs = produs; }
 }

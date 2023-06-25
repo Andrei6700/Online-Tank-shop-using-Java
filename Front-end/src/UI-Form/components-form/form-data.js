@@ -16,6 +16,7 @@ export const useFormData = () => {
             .max(64, 'Maxim 64 characters').required('Invalid form'),
         adresa: yup.string().matches(/^[a-zA-Z0-9\s\.,'"\-]+$/, 'Invalid address')
             .max(64, 'Maxim 64 characters').required('Invalid form'),
+        
         cantitate: yup.string().matches(/^(?:[a-zA-Z0-9\s\.,'"\-]|100)$/, 'invalid quantity')
         .max(64, '100 pieces maximum').required('Invalid form'),  
     });

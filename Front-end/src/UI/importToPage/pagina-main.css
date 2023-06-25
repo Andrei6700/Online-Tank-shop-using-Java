@@ -55,11 +55,14 @@ background-color: #161616;
   font-family: Optima;
   display: inline-block;
   font-weight: 50;
-  font-size: 17px;
+  font-size: 15px;
   letter-spacing: 0.2em;
   border-radius: 500px;
   background-image: url("../images-patterns/military\ camouflage\ patterns-buttons-filtre.jpg");
   color: ghostwhite;
  }
  
- 
+ .footer-link{
+    color: white;
+    text-decoration: none;
+ }

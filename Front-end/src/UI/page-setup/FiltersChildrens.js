@@ -121,7 +121,9 @@ export const FiltersChildrens = () => {
 
 
 
-      <button className="btn-filtre" onClick={handleSubmit}>Filtreaza</button>
+      <button className="btn-filtre" onClick={handleSubmit}>
+        Filtreaza
+        </button>
     </div>
   );
 };

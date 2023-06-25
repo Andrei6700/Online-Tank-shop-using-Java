@@ -116,3 +116,8 @@
     opacity: 1;
   }
 }
+
+.footer-link{
+  color: white;
+  text-decoration: none;
+}

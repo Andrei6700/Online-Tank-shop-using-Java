@@ -28,6 +28,7 @@ public class FormHTTPS {
                         "Address: " + form.getAdresa() + "\n" +
                         "Phone: " + form.getTelefon() + "\n" +
                         "Bmilitara: " + form.getBmilitara() + "\n" +
+                        "Tank: " + form.getProdus() + "\n" +
                         "Quantity: " + form.getCantitate()
         );
         return "Adăugat cu succes";
