@@ -4,7 +4,7 @@ export const OnSubmit = (data, tankName) => {
   console.log(data);
   const formData = {
     ...data,
-    tank: tankName,
+    tankName: tankName,  
   };
   axios.post('http://localhost:8080/send/add', formData)
     .then(response => {

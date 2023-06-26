@@ -20,10 +20,6 @@ public class Form {
     public Form() {
     }
 
-    public String getTank() {
-        return tankName;
-    }
-
     public int getId() {
         return id;
     }

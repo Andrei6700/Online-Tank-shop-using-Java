@@ -9,13 +9,14 @@ import { useParams } from 'react-router-dom';
 export const Form = () => {
   const { register, handleSubmit, errors } = useFormData();
   const { id } = useParams();
+  const tankName = id;
 
   const onSubmit = (data) => {
     const formData = {
       ...data,
       tank: id,
     };
-    OnSubmit(formData);
+    OnSubmit(formData, tankName);
   };
 
   return (
