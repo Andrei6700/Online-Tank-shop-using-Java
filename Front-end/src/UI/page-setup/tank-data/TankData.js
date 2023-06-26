@@ -18,7 +18,7 @@ import XM975 from "../../tancuri-img/XM975.png"
 
 export const tankData = [
   {
-    image: require("../../tancuri-img/ADATS.jpg"),
+    image: require("../../tancuri-img/M103.jpeg"),
     name: "M103",
     text_description: "Tun principal de 120 mm, Proiectile de mare precizie, Blindajul rezistent, Motor puternic.",
     cannon_description:"Tun principal de 120 mm cu capacitate de tragere la distanțe mari și proiectile de mare precizie. Dispune și de două mitraliere de calibru 7,62 mm.",

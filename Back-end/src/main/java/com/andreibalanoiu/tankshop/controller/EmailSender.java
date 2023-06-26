@@ -20,7 +20,12 @@ public class EmailSender {
         message.setTo(toEmail);
         message.setText(body);
         message.setSubject(subject);
-        mailSender.send(message);
-        System.out.println("Mail Send !!!");
+        try {
+            mailSender.send(message);
+            System.out.println("Mail Sent!!!");
+        } catch (Exception e) {
+            System.out.println("Mail Error!!!");
+            e.printStackTrace();
+        }
     }
 }

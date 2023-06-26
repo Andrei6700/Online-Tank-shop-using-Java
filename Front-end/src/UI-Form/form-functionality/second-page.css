@@ -32,7 +32,7 @@
   justify-content: space-evenly;
   align-items: center;
   color: white;
-  padding-top:10%;
+  padding-top: 10%;
 }
 
 .form-order-page {
@@ -40,7 +40,7 @@
   background-color: #b89f6c;
   display: flex;
   padding-left: 25%;
-  padding-top:10%;
+  padding-top: 10%;
 }
 
 .footer-page {
@@ -59,8 +59,10 @@
 }
 
 .image-tank {
-  border-radius: 2%;
+  border-radius: 10%;
   height: 500px;
+  object-fit: contain;
+  aspect-ratio: 3/2;
 }
 
 .text-tank {
@@ -74,17 +76,17 @@
   line-height: normal;
 }
 
-.form-title{
+.form-title {
   justify-content: center;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
-.Btn-back{
+.Btn-back {
   left: 1%;
   top: 9%;
-  z-index:9999;
+  z-index: 9999;
   width: 45px;
   height: 45px;
   background: linear-gradient(#6b8773, #232823);
@@ -117,7 +119,7 @@
   }
 }
 
-.footer-link{
+.footer-link {
   color: white;
   text-decoration: none;
 }
