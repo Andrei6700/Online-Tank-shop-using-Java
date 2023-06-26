@@ -15,11 +15,12 @@ public class FormHTTPS {
     private EmailSender emailSender;
     @Autowired
     private FormService formService;
-
     @PostMapping("/add")
     public String SendFormDBAndEmail(@RequestBody Form form) {
         form.setTankName(form.getTankName());
+        //adaugarea obliectelor din form in baza de date
         formService.saveForm(form);
+        // trimiterea unui email sub forma de mai jsos
         emailSender.sendSimpleEmail(
                 form.getEmail(),
                 "Orders",
@@ -34,6 +35,7 @@ public class FormHTTPS {
         );
         return "Adăugat cu succes";
     }
+    // obtinem tuturor datelor din form
     @GetMapping("/getAll")
     public List<Form> list(){
         return formService.getAllDataForm();

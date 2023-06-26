@@ -13,7 +13,7 @@ public class EmailSender {
     public EmailSender(JavaMailSender mailSender) {
         this.mailSender = mailSender;
     }
-
+//metoda de trimitere a unui email
     public void sendSimpleEmail(String toEmail, String subject, String body) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("fromemail@gmail.com");

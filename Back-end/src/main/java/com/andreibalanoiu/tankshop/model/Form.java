@@ -20,6 +20,7 @@ public class Form {
     public Form() {
     }
 
+    // getter si seter pentru fiecare atribut
     public int getId() {
         return id;
     }

@@ -13,11 +13,13 @@ public class FormServiceImpl implements FormService {
     @Autowired
     private FormRepository formRepository;
     @Override
+    //salvarea obiectului utilizand formRepository
     public Form saveForm(Form form) {
         return formRepository.save(form);
     }
 
     @Override
+    //obtinerea tuturor obiectelor utilizand getAllDataForm
     public List<Form>getAllDataForm(){
         return formRepository.findAll();
     }

@@ -15,7 +15,6 @@ public class TankshopApplication {
 
 	@Autowired
 	private EmailSender mailSender;
-
 	public static void main(String[] args) {
 		SpringApplication.run(TankshopApplication.class, args);
 	}
