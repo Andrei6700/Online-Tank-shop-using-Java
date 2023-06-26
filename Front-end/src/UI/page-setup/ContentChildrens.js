@@ -5,7 +5,7 @@ import { tankData } from "./tank-data/TankData";
 
 export const ContentChildrens = ({ tank }) => {
   return (
-    <div class="content">
+    <div className="content">
       <div className="title">
         Magazin Online de Tancuri
         <hr className="hr-title" />

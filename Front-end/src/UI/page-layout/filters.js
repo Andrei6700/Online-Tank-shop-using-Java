@@ -3,7 +3,7 @@ import { FiltersChildrens } from "../page-setup/FiltersChildrens"
 
 export const Filters=()=>{
     return (
-        <div class="filters">
+        <div className="filters">
             <FiltersChildrens/>
         </div>        
     )
