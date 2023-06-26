@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { tankData } from "../../UI/page-setup/tank-data/TankData";
 import { Link } from "react-router-dom";
+
 export const DescriptionPage = () => {
   const { id } = useParams();
 

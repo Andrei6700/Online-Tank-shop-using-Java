@@ -20,12 +20,4 @@ public class TankshopApplication {
 		SpringApplication.run(TankshopApplication.class, args);
 	}
 
-	@EventListener(ApplicationReadyEvent.class)
-	public void triggerMail() {
-		mailSender.sendSimpleEmail(
-				"toemail@gmail.com",
-				"Orders",
-				"name"
-		);
-	}
 }
