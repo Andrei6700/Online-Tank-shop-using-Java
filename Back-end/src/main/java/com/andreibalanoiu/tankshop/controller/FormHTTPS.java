@@ -18,17 +18,18 @@ public class FormHTTPS {
 
     @PostMapping("/add")
     public String SendFormDBAndEmail(@RequestBody Form form) {
+        form.setTankName(form.getTank());
         formService.saveForm(form);
         emailSender.sendSimpleEmail(
                 form.getEmail(),
                 "Orders",
-                "Name: " + form.getName() + "\n" +
+                  "Name: " + form.getName() + "\n" +
                         "Email: " + form.getEmail() + "\n" +
                         "Country: " + form.getTara() + "\n" +
                         "Address: " + form.getAdresa() + "\n" +
                         "Phone: " + form.getTelefon() + "\n" +
                         "Bmilitara: " + form.getBmilitara() + "\n" +
-                        "Tank: " + form.getProdus() + "\n" +
+                        "Tank: " + form.getTankName() + "\n" +
                         "Quantity: " + form.getCantitate()
         );
         return "Adăugat cu succes";

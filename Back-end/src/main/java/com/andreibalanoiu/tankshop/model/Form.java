@@ -3,10 +3,10 @@ package com.andreibalanoiu.tankshop.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Comenzile")
+@Table( name = "Comenzile" )
 public class Form {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue( strategy = GenerationType.IDENTITY )
     private int id;
     private String name;
     private String email;
@@ -14,19 +14,21 @@ public class Form {
     private String telefon;
     private String bmilitara;
     private String adresa;
-
-    private String produs;
-
+    private String tankName;
     private String cantitate;
 
     public Form() {
+    }
+
+    public String getTank() {
+        return tankName;
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId( int id ) {
         this.id = id;
     }
 
@@ -34,7 +36,7 @@ public class Form {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName( String name ) {
         this.name = name;
     }
 
@@ -42,7 +44,7 @@ public class Form {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail( String email ) {
         this.email = email;
     }
 
@@ -50,7 +52,7 @@ public class Form {
         return tara;
     }
 
-    public void setTara(String tara) {
+    public void setTara( String tara ) {
         this.tara = tara;
     }
 
@@ -58,7 +60,7 @@ public class Form {
         return telefon;
     }
 
-    public void setTelefon(String telefon) {
+    public void setTelefon( String telefon ) {
         this.telefon = telefon;
     }
 
@@ -66,7 +68,7 @@ public class Form {
         return bmilitara;
     }
 
-    public void setBmilitara(String bmilitara) {
+    public void setBmilitara( String bmilitara ) {
         this.bmilitara = bmilitara;
     }
 
@@ -74,7 +76,7 @@ public class Form {
         return adresa;
     }
 
-    public void setAdresa(String adresa) {
+    public void setAdresa( String adresa ) {
         this.adresa = adresa;
     }
 
@@ -82,12 +84,15 @@ public class Form {
         return cantitate;
     }
 
-    public void setCantitate(String cantitate) {
+    public void setCantitate( String cantitate ) {
         this.cantitate = cantitate;
     }
 
-    public String getProdus(){
-        return  produs;
+    public String getTankName() {
+        return tankName;
     }
-    public  void setProdus(String produs) { this.produs = produs; }
+
+    public void setTankName( String tankName ) {
+        this.tankName = tankName;
+    }
 }

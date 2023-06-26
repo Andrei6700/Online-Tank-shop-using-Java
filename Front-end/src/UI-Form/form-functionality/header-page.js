@@ -13,10 +13,9 @@ export const HeaderPage = () => {
   }
   
   const handleFormSubmit = (e) => {
-    e.preventDefault();
     OnChange(e, produs.name);
   };
-
+  
   return (
     <div className="header-page">
       <div>

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import {Form} from "../form/Form"
 
 function FormOrder() {
@@ -13,4 +13,3 @@ function FormOrder() {
 }
 
 export default FormOrder;
-

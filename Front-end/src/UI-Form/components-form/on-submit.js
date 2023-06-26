@@ -1,8 +1,12 @@
 import axios from 'axios';
 
-export const OnSubmit = (data,produsname) => {
+export const OnSubmit = (data, tankName) => {
   console.log(data);
-  axios.post('http://localhost:8080/send/add', data)
+  const formData = {
+    ...data,
+    tank: tankName,
+  };
+  axios.post('http://localhost:8080/send/add', formData)
     .then(response => {
       console.log(response.data);
       alert('Sent successfully!');
@@ -13,10 +17,9 @@ export const OnSubmit = (data,produsname) => {
     });
 };
 
-export const OnChange = (e, produsname) => {
+export const OnChange = (e) => {
   e.preventDefault();
   const formData = {
-    produs: produsname,
     name: e.target.name.value,
     email: e.target.email.value,
     tara: e.target.tara.value,
