@@ -24,10 +24,8 @@ After modifying config.js, you need to open 2 terminals:
 # Built With
 * [React](https://reactjs.org/) - The web framework used.
 * [NodeJS](https://nodejs.org) - JavaScript runtime built on Chrome's V8 engine.
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used for the application logic.
+* [Java]
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - The styling language used for the layout of the application.
-* [Cors](https://www.npmjs.com/package/cors) - Middleware for managing same-origin policy in Express.
-* [Body-parser](https://www.npmjs.com/package/body-parser) - Middleware for parsing data from HTTP requests in Express.
 * [Yup](https://github.com/jquense/yup) - Form validation.
 * [Axios](https://github.com/axios/axios) - Back-end framework
 
